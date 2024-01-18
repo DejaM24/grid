@@ -1,0 +1,63 @@
+
+.grid {
+    background-color: bisque;
+    height: 40vh;
+      display: grid;
+    margin-bottom: 10px;
+
+      grid-template-areas:
+        "two     three    five"
+        "one     one        five"
+        "one    one        five"
+        "four    .        five";
+}
+
+.flex {
+    background-color: coral;
+    height: 40vh;
+}
+
+.one {
+    grid-area: one;
+    background-color: cyan;
+}
+
+.two {
+    grid-area: two;
+    background-color: greenyellow;
+
+    flex-grow: 1;
+}
+
+.three {
+    grid-area: three;
+    background-color: darkslateblue;
+
+    flex-grow: 1;
+}
+
+.four {
+    grid-area: four;
+    background-color: cornflowerblue;
+
+    flex-grow: 1;
+}
+
+.five {
+    grid-area: five;
+    background-color: lightsalmon;
+
+    flex-grow: 1;
+}
+
+.container1 {
+    display: flex;
+}
+
+.empty {
+    flex-grow: 1;
+}
+
+.container3 {
+    display: flex;
+}
