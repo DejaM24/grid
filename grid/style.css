@@ -1,52 +1,72 @@
+body{
+    overflow-x: hidden;
+    margin: 0;
+}
 
-.grid {
-    background-color: bisque;
-    height: 40vh;
-      display: grid;
+header{
+    background-color: lightskyblue;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: sticky;
+    top: 0;
+
+}
+
+#icon{
+    height: 50px;
+    width: auto;
+}
+
+.links{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-grow:  1;
+}
+main {
+    display: grid;
+    grid-template-areas: 
+    "content content sidebar";
+}
+
+.content {
+    grid-area: content;
+    margin: 10px;
+    
+}
+
+.sidebar {
+    margin: 10px;
+    grid-area: sidebar;
+}
+
+.article {
+    margin-bottom: 25px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.title{
     margin-bottom: 10px;
-
-      grid-template-areas:
-        "two     three    five"
-        "one     one        five"
-        "one    one        five"
-        "four    .        five";
+    text-align: center;
 }
 
-.flex {
-    background-color: coral;
-    height: 40vh;
-}
+.links > a {
+    color: black;
+    text-decoration: none;
+    border: 1px solid gray;
+    padding: 5px;
 
-.one {
-    grid-area: one;
-    background-color: cyan;
-}
+    flex-grow: 1;
 
-.two {
-    grid-area: two;
-    background-color: greenyellow;
-
+    height: 100%;
+    align-self: center;
+    justify-content: center;
     
 }
 
-.three {
-    grid-area: three;
-    background-color: darkslateblue;
-
-   
+.links > a:hover {
+    background-color: blue;
 }
-
-.four {
-    grid-area: four;
-    background-color: cornflowerblue;
-
-    
-}
-
-.five {
-    grid-area: five;
-    background-color: lightsalmon;
-
-   
-}
-
